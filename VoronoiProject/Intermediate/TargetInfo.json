@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "VoronoiProject",
+			"Path": "S:\\Dev\\Voronoi\\VoronoiProject\\Source\\VoronoiProject.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "VoronoiProjectEditor",
+			"Path": "S:\\Dev\\Voronoi\\VoronoiProject\\Source\\VoronoiProjectEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
