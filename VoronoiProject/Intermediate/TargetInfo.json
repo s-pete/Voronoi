@@ -2,12 +2,12 @@
 	"Targets": [
 		{
 			"Name": "VoronoiProject",
-			"Path": "C:\\Users\\beweber\\source\\repos\\s-pete\\Voronoi\\VoronoiProject\\Source\\VoronoiProject.Target.cs",
+			"Path": "S:\\Dev\\Voronoi\\VoronoiProject\\Source\\VoronoiProject.Target.cs",
 			"Type": "Game"
 		},
 		{
 			"Name": "VoronoiProjectEditor",
-			"Path": "C:\\Users\\beweber\\source\\repos\\s-pete\\Voronoi\\VoronoiProject\\Source\\VoronoiProjectEditor.Target.cs",
+			"Path": "S:\\Dev\\Voronoi\\VoronoiProject\\Source\\VoronoiProjectEditor.Target.cs",
 			"Type": "Editor"
 		}
 	]

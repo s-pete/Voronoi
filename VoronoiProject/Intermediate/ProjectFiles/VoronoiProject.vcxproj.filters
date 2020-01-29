@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\VoronoiProject.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{ED44ADF6-B0CE-4520-B238-BFC2AFD0A769}</UniqueIdentifier>
+      <UniqueIdentifier>{2A73F4AB-63BE-4D3C-A7A0-005608B60163}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\VoronoiProject.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{A29D5EA6-3168-48D2-A41D-FF9CCE07B411}</UniqueIdentifier>
+      <UniqueIdentifier>{BE225D99-9A06-46C7-9B7B-1656149FECC5}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -24,8 +24,20 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\VoronoiProject">
-      <UniqueIdentifier>{79D2820B-C145-44F1-A73D-0317C966101B}</UniqueIdentifier>
+      <UniqueIdentifier>{119F540E-B43B-458F-84CA-181ECA68B2F8}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\VoronoiProject\MyCharacter.cpp">
+      <Filter>Source\VoronoiProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\VoronoiProject\MyCharacter.h">
+      <Filter>Source\VoronoiProject</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\VoronoiProject\TestActoor.cpp">
+      <Filter>Source\VoronoiProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\VoronoiProject\TestActoor.h">
+      <Filter>Source\VoronoiProject</Filter>
+    </ClInclude>
     <None Include="..\..\Source\VoronoiProject\VoronoiProject.Build.cs">
       <Filter>Source\VoronoiProject</Filter>
     </None>
@@ -41,15 +53,5 @@
     <ClInclude Include="..\..\Source\VoronoiProject\VoronoiProjectGameModeBase.h">
       <Filter>Source\VoronoiProject</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\Source\VoronoiProject\TestActoor.h">
-      <Filter>Source\VoronoiProject</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="..\..\Source\VoronoiProject\TestActoor.cpp">
-      <Filter>Source\VoronoiProject</Filter>
-    </ClCompile>
   </ItemGroup>
 </Project>

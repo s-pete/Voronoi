@@ -1,8 +1,8 @@
 {
 	"SourceFiles": [
-		"C:\\Users\\beweber\\source\\repos\\s-pete\\Voronoi\\VoronoiProject\\Source\\VoronoiProject\\VoronoiProject.Build.cs",
-		"C:\\Users\\beweber\\source\\repos\\s-pete\\Voronoi\\VoronoiProject\\Source\\VoronoiProject.Target.cs",
-		"C:\\Users\\beweber\\source\\repos\\s-pete\\Voronoi\\VoronoiProject\\Source\\VoronoiProjectEditor.Target.cs"
+		"S:\\Dev\\Voronoi\\VoronoiProject\\Source\\VoronoiProject\\VoronoiProject.Build.cs",
+		"S:\\Dev\\Voronoi\\VoronoiProject\\Source\\VoronoiProject.Target.cs",
+		"S:\\Dev\\Voronoi\\VoronoiProject\\Source\\VoronoiProjectEditor.Target.cs"
 	],
 	"EngineVersion": "4.24.1"
 }
