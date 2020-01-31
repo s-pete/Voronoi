@@ -27,38 +27,3 @@ FVector UVoronoiBlueprints::MaxPositionBound(TArray<AActor*> actors)
 
 	return FVector{ maxX + 100, maxY + 100, 0 };
 }
-
-int UVoronoiBlueprints::SnapToClosest(TArray<FVector> actors, TArray<FVector> offsets, int actorIdx, float snapDistance)
-{
-	for (int i = 0; i < actorIdx; ++i) {
-		float dist = FVector::Dist(actors[i], actors[actorIdx]);
-		if (dist < snapDistance) {
-			return i;
-		}
-	}
-
-	return actorIdx;
-}
-
-float UVoronoiBlueprints::SnapLerpValue(FVector v1, FVector v2, float snapClose, float damping)
-{
-	float distance = FVector::Distance(v1, v2);
-
-	float g = FMath::Max(FMath::Abs(distance) - snapClose, 0.0f) * FMath::Sign(distance);
-	float lerpValue = 1 - ((2 * FMath::Atan(g / damping)) / PI);
-
-	return lerpValue;
-
-}
-
-float UVoronoiBlueprints::GetLineThickness(FVector v1, FVector v2, float snapClose, float damping)
-{
-	float distance = FVector::Distance(v1, v2);
-	if (distance < snapClose) {
-		return 0;
-	}
-
-	float thickness = 1 - (1 / ((distance - snapClose / damping) + 1));
-
-	return thickness;
-}
