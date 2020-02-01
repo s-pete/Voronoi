@@ -23,5 +23,5 @@ class VORONOIPROJECT_API UVoronoiBlueprints : public UBlueprintFunctionLibrary
 	UFUNCTION(BlueprintPure, meta = (DisplayName = "Snap Lerp Value", CompactNodeTitle = "SnapLerpValue", Keywords = "Snap Lerp Value"), Category = Game)
 	static float SnapLerpValue(FVector v1, FVector v2, float snapClose, float damping);
 	UFUNCTION(BlueprintPure, meta = (DisplayName = "Get Line Thickness", CompactNodeTitle = "GetLineThickness", Keywords = "Get Line Thickness"), Category = Game)
-	static float GetLineThickness(FVector v1, FVector v2, float snapClose, float damping);
+	static float GetLineThickness(FVector v1, FVector v2, float snapClose, float snapDistance);
 };
