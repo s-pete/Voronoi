@@ -40,15 +40,16 @@ int UVoronoiBlueprints::SnapToClosest(TArray<FVector> actors, TArray<FVector> of
 	return actorIdx;
 }
 
-float UVoronoiBlueprints::SnapLerpValue(FVector v1, FVector v2, float snapClose, float damping)
+float UVoronoiBlueprints::SnapLerpValue(FVector v1, FVector v2, float snapClose, float snapDistance)
 {
 	float distance = FVector::Distance(v1, v2);
 
-	float g = FMath::Max(FMath::Abs(distance) - snapClose, 0.0f) * FMath::Sign(distance);
-	float lerpValue = 1 - ((2 * FMath::Atan(g / damping)) / PI);
+	//float g = FMath::Max(FMath::Abs(distance) - snapClose, 0.0f) * FMath::Sign(distance);
+	//float lerpValue = 1 - ((2 * FMath::Atan(g / damping)) / PI);
 
-	return lerpValue;
+	float lerpValue = FMath::Max(distance - snapClose, 0.0f) / (snapDistance - snapClose);
 
+	return 1 - lerpValue;
 }
 
 float UVoronoiBlueprints::GetLineThickness(FVector v1, FVector v2, float snapClose, float damping)
